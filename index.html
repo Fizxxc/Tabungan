@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabungan Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Website Tabungan Online</h1>
+            <nav>
+                <ul>
+                    <li><a href="php/login.php">Login</a></li>
+                    <li><a href="php/register.php">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h2>Hitung Tabungan</h2>
+                <form id="simulasi-form">
+                    <div class="form-group">
+                        <label for="principal">Saldo Awal:</label>
+                        <input type="number" id="principal" name="principal" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">Bunga (% per tahun):</label>
+                        <input type="number" id="rate" name="rate" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Jangka Waktu (tahun):</label>
+                        <input type="number" id="time" name="time" required>
+                    </div>
+                    <button type="submit" class="btn">Hitung</button>
+                </form>
+                <p id="hasil" class="result"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Website Tabungan Online. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
